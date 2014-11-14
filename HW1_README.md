@@ -10,5 +10,4 @@ Requirement 2- in electiondata.py/ class ElectionResultsWrap
 Requirement 3- in electiondata.py/ class ElectionScrapper
 
 Testing:
-main function of electiondata.py for requirement 3
-or the unittest for all methods of HW requirements
+main function of electiondata.py for requirement 2 and 3
