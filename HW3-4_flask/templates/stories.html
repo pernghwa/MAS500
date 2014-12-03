@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}{{ country }}{% endblock %}
+
+{% block country_input %}{{ country_name }}{% endblock %}
+
+{% block content %}
+
+<div class="row" id="gv-stories">
+
+	{% for story in range(3) %}
+
+		<div class="span4 gv-story">
+			<div class="well">
+			    <h2><a href="{{ stories[story]['link'] }}">{{ stories[story]['title'] }}</a></h2>
+			    <p>{{ stories[story]['contentSnippet'] }}</p>
+			</div>
+		</div>
+
+	{% endfor %}
+
+</div>    
+
+<div class="row" id="gv-stories">
+
+	{% for story in range(3,6) %}
+
+		<div class="span4 gv-story">
+			<div class="well">
+			    <h2><a href="{{ stories[story]['link'] }}">{{ stories[story]['title'] }}</a></h2>
+			    <p>{{ stories[story]['contentSnippet'] }}</p>
+			</div>
+		</div>
+
+	{% endfor %}
+
+</div>   
+
+{% endblock %}
